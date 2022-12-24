@@ -44,7 +44,24 @@
     "Embrace challenges",
     "Keep learning",
     "Stay true to yourself",
-    "Keep striving for improvement"];
+    "keep striving for improvement"];
+    const asciiArr = [
+        ' _____ \n|     |\n|  x  |\n|_____|',
+        ' _____ \n|     |\n| \\x/ |\n|_____|',
+        '   /\\  \n  /  \\ \n / x  \\ \n/_____\\',
+        '   /\\  \n  /  \\ \n / \\x/ \\ \n/_____\\ ',
+        '    _____ \n   /     \\ \n  /  x    \\ \n /_________\\',
+        '   _____\n  /     \\ \n |   x   |\n  \\_____/',
+        '   _____ \n  /     \\ \n  |  x   |\n  \\_____/ ',
+        '   ______\n  /      \\ \n |        |\n  \\      / \n   \\____/  ',
+        '    _______\n   /       \\ \n  /         \\ \n |           |\n  \\         /\n   \\_______/ ',
+        ' _________\n|         |\n|  xxxx   |\n|_________|',
+        ' _________\n|         |\n|  x   x  |\n|_________|',
+        ' _________\n|         |\n|  x x x  |\n|_________|',
+        ' _________\n|         |\n|  xxxxxx |\n|_________|',
+        ' _________\n|         |\n|  x   x  |\n|    x    |\n|  x   x  |\n|_________|',
+        ' _________\n|         |\n|  x   x  |\n|  x x x  |\n|  x   x  |\n|_________|',
+    ]
 
     // Random script
 
@@ -55,11 +72,13 @@
     let firstWord = firstArr[randomIndex];
     let secondWord = secondArr[randomIndex];
     let thirdWord = thirdArr[randomIndex];
+    let randomArt = asciiArr[randomIndex];
 
     // Creating the random message
 
     const genRan = () => {
-        return `You are ${firstWord} than you think! Wake up! Stop ${secondWord}! We are all can do this! ${thirdWord}!`
+        return `${randomArt}
+        You are ${firstWord} than you think! Wake up! Stop ${secondWord}! We are all can do this! ${thirdWord}!`
     }
 
     console.log(genRan());
